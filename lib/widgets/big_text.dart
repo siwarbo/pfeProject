@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forkify/utils/dimensions.dart';
 
 class BigText extends StatelessWidget {
   Color? color; // Make color nullable
@@ -23,7 +24,7 @@ class BigText extends StatelessWidget {
       style: TextStyle(
         fontFamily: 'Roboto',
         color: color,
-        fontSize: size,
+        fontSize: Dimensions.font20 ,
         fontWeight: FontWeight.w400,
       ),
     );
