@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:forkify/home/food_page_body.dart';
+import 'package:forkify/pages/home/food_page_body.dart';
 import 'package:forkify/utils/colors.dart';
 import 'package:forkify/utils/dimensions.dart';
 import 'package:forkify/widgets/big_text.dart';
