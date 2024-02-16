@@ -103,7 +103,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
               itemBuilder: (context, index) {
                 return Container(
                   margin: EdgeInsets.only(
-                      left: Dimensions.width20, right: Dimensions.width20),
+                      left: Dimensions.width20,
+                      right: Dimensions.width20,
+                      bottom: Dimensions.height10),
                   child: Row(
                     children: [
                       Container(
@@ -114,7 +116,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                 BorderRadius.circular(Dimensions.radius20),
                             color: Colors.white38,
                             image: DecorationImage(
-                              
+                                fit: BoxFit.cover,
                                 image: AssetImage(
                                     "assets/tunisian-dishes-brik.jpg"))),
                       )
