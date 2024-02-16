@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forkify/utils/dimensions.dart';
 import 'package:forkify/widgets/small_text.dart';
 
 class IconAndTextWidget extends StatelessWidget {
@@ -11,15 +12,23 @@ class IconAndTextWidget extends StatelessWidget {
     required this.icon,
     required this.text,
     required this.iconColor,
-    }): super(key: key);
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(icon,color: iconColor,),
-        SizedBox(width: 5,),
-        SmallText(text: text,),
+        Icon(
+          icon,
+          color: iconColor,
+          size: Dimensions.iconSize24,
+        ),
+        SizedBox(
+          width: 5,
+        ),
+        SmallText(
+          text: text,
+        ),
       ],
     );
   }
