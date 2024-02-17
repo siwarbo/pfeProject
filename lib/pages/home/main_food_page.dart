@@ -20,10 +20,12 @@ class _MainFoodPageState extends State<MainFoodPage> {
         children: [
           //showing the header
           Container(
-            margin: EdgeInsets.only(
-                top: Dimensions.height45, bottom: Dimensions.height15),
-            padding: EdgeInsets.only(
-                left: Dimensions.width20, right: Dimensions.width20),
+
+            child: Container(
+              margin: EdgeInsets.only(
+                  top: Dimensions.height45, bottom: Dimensions.height15),
+              padding: EdgeInsets.only(
+                  left: Dimensions.width20, right: Dimensions.width20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -55,12 +57,12 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 ),
               ],
             ),
-          ),
+          )),
           //showing the body
           Expanded(
               child: SingleChildScrollView(
-            child: FoodPageBody(),
-          ))
+                child: FoodPageBody(),
+          )),
         ],
       ),
     );

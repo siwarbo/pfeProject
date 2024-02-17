@@ -8,7 +8,7 @@ import 'package:forkify/widgets/icon_and_text_widget.dart';
 import 'package:forkify/widgets/small_text.dart';
 
 class FoodPageBody extends StatefulWidget {
-  const FoodPageBody({super.key});
+  const FoodPageBody({Key? key}) : super(key: key);
 
   @override
   State<FoodPageBody> createState() => _FoodPageBodyState();
